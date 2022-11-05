@@ -13,6 +13,7 @@ public class Validation {
             System.out.println("First Name is Valid---!!");
         } else {
             System.out.println("First Name is Invalid--!!");
+            checkFirstName();
         }
     }
 
@@ -24,6 +25,7 @@ public class Validation {
             System.out.println("LastName is Valid---!!");
         } else {
             System.out.println("LastName is Invalid--!!");
+            checkLastName();
         }
     }
     public void checkEmail() {
@@ -34,6 +36,18 @@ public class Validation {
             System.out.println("Email is Valid---!!");
         } else {
             System.out.println("Email is Invalid--!!");
+            checkEmail();
+        }
+    }
+    public void checkPhoneNumber() {
+        System.out.println("-----------------");
+        System.out.println("Enter PhoneNumber : ");
+        String phoneNumber  = sc.next();
+        if (Pattern.matches("^[0-9]*[-]?[0-9]{10}", phoneNumber)) {
+            System.out.println("PhoneNumber is Valid---!!");
+        } else {
+            System.out.println("PhoneNumber is Invalid--!!");
+            checkPhoneNumber();
         }
     }
 }
