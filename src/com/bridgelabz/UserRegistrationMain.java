@@ -5,6 +5,6 @@ public class UserRegistrationMain {
         Validation validation=new Validation();
         validation.checkFirstName();
         validation.checkLastName();
-
+        validation.checkEmail();
     }
 }
