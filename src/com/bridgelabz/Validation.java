@@ -23,7 +23,7 @@ public class Validation {
         if (Pattern.matches("^[A-Z]{1}[a-z]{3,}", lastName)) {
             System.out.println("LastName is Valid---!!");
         } else {
-            System.out.println("FirstName is Invalid--!!");
+            System.out.println("LastName is Invalid--!!");
         }
     }
 }
