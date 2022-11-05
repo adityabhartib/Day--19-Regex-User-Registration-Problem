@@ -6,5 +6,6 @@ public class UserRegistrationMain {
         validation.checkFirstName();
         validation.checkLastName();
         validation.checkEmail();
+        validation.checkPhoneNumber();
     }
 }
