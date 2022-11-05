@@ -10,9 +10,9 @@ public class Validation {
         System.out.println("Enter First Name : ");
         String firstName=sc.next();
         if (Pattern.matches("^[A-Z]{1}[a-z]{3,}",firstName)){
-            System.out.println("First Name is Valid");
+            System.out.println("First Name is Valid---!!");
         }else {
-            System.out.println("First Nmae is Invalid");
+            System.out.println("First Nmae is Invalid--!!");
         }
     }
 }
