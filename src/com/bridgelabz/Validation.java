@@ -50,5 +50,16 @@ public class Validation {
             checkPhoneNumber();
         }
     }
+    public void checkPasswordRule1() {
+        System.out.println("-----------------");
+        System.out.println("Enter Password : ");
+        String password  = sc.nextLine();
+        if (Pattern.matches("^[a-zA-z]{8,}",password)) {
+            System.out.println("Password is Valid---!!");
+        } else {
+            System.out.println("Password is Invalid--!!");
+            checkPasswordRule1();
+        }
+    }
 }
 
