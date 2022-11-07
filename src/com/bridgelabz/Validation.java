@@ -72,5 +72,16 @@ public class Validation {
             checkPasswordRule1();
         }
     }
+    public void checkPasswordRule3() {
+        System.out.println("-----------------");
+        System.out.println("Enter Password : ");
+        String password  = sc.nextLine();
+        if (Pattern.matches("^[A-Z0-9]+[A-Za-z0-9]{8,}",password)) {
+            System.out.println("Password is Valid---!!");
+        } else {
+            System.out.println("Password is Invalid--!!");
+            checkPasswordRule1();
+        }
+    }
 }
 
