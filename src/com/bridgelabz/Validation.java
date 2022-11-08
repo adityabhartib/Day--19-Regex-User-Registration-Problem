@@ -69,18 +69,29 @@ public class Validation {
             System.out.println("Password is Valid---!!");
         } else {
             System.out.println("Password is Invalid--!!");
-            checkPasswordRule1();
+            checkPasswordRule2();
         }
     }
     public void checkPasswordRule3() {
         System.out.println("-----------------");
         System.out.println("Enter Password : ");
         String password  = sc.nextLine();
-        if (Pattern.matches("^[A-Z0-9]+[A-Za-z0-9]{8,}",password)) {
+        if (Pattern.matches("^[A-Z]+[A-Za-z0-9]{8,}",password)) {
             System.out.println("Password is Valid---!!");
         } else {
             System.out.println("Password is Invalid--!!");
-            checkPasswordRule1();
+            checkPasswordRule3();
+        }
+    }
+    public void checkPasswordRule4() {
+        System.out.println("-----------------");
+        System.out.println("Enter Password : ");
+        String password  = sc.nextLine();
+        if (Pattern.matches("^[A-Z]+[A-Za-z0-9]{7,}[!@#$%^&*()=]+",password)) {
+            System.out.println("Password is Valid---!!");
+        } else {
+            System.out.println("Password is Invalid--!!");
+            checkPasswordRule4();
         }
     }
 }
