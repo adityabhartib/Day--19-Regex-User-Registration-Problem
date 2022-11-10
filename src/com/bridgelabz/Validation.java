@@ -94,19 +94,16 @@ public class Validation {
     }
 
     public void checkEmail2() {
-        int choice;
-        do {
-            System.out.println("Press 1.Exit ");
-            choice = sc.nextInt();
-            System.out.println("-----------------");
-            String email = sc.nextLine();
-            if (Pattern.matches("^[a-zA-Z]{3,}[+-.]?[A-za-z0-9]*[@]{1}[a-z]+[.]?[a-z]*[.]?[a-z]", email)) {
-                System.out.println("Email is Valid---!!");
-            } else {
-                System.out.println("Email is Invalid--!!");
-                checkEmail2();
-            }
-        } while (choice != 1);
+        System.out.println("-----------------");
+        System.out.println("Enter Email Id: ");
+        String email = sc.nextLine();
+        if (Pattern.matches("^[a-zA-Z]{3,}[+-.]?[A-za-z0-9]*[@]{1}[a-z]+[.]?[a-z]*[.]?[a-z]", email)) {
+            System.out.println("Email is Valid---!!");
+            checkEmail2();
+        } else {
+            System.out.println("Email is Invalid--!!");
+            checkEmail2();
+        }
     }
 }
 
